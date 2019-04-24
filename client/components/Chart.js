@@ -1,3 +1,4 @@
+"use strict";
 import * as React from "react";
 import { Card, Switch, DatePicker } from "antd";
 import { getOptins, getRecipients } from "../api/reports";

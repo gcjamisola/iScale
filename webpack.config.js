@@ -50,7 +50,7 @@ if (!IS_PROD) {
 module.exports = {
     mode: IS_PROD ? "production" : "development",
     entry: {
-      'app' : "./client/dashboard/index.tsx",
+      'app' : ["babel-polyfill", "./client/dashboard/index.tsx"],
       // vendor.js has all common 3rd party libraries
       'vendor' : ['react', 'prop-types', 'react-dom', 'redux', 'react-redux', 'redux-thunk', 'react-router-dom', 'antd', 'underscore']
     },
