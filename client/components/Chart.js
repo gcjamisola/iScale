@@ -1,8 +1,6 @@
-"use strict";
 import * as React from "react";
 import { Card, Switch, DatePicker } from "antd";
 import { getOptins, getRecipients } from "../api/reports";
-import axios from "axios";
 import styled from "styled-components";
 
 import { Line } from "react-chartjs-2";
@@ -10,7 +8,7 @@ import { Line } from "react-chartjs-2";
 const { RangePicker } = DatePicker;
 require("antd/dist/antd.less");
 
-export default class DashboardApp extends React.Component {
+export default class Chart extends React.Component {
   state = {
     chartData: {
       labels: [],
